@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+  <script src=""></script>
+{% endblock %}
+{% block content %}
+<form action='/' method='POST'>
+    <input type='text' name='email' id='email' placeholder='email'></input>
+    <input type='password' name='pw' id='pw' placeholder='password'></input>
+    <button type='submit' name='submit'>Login</button>
+</form>
+{% endblock %}
